@@ -1,0 +1,31 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "SAFANI";
+
+            /*
+             *  K1    K2    K3
+             *  K4    K5    K6
+             *  K7    K8    K9
+             *  ENC SW
+             */
+            bindings = <
+                &kp A  &kp B  &kp C
+                &kp D  &kp E  &kp F
+                &kp G  &kp H  &kp I
+                &kp C_MUTE
+            >;
+
+            /* Clockwise = volume up, counter-clockwise = volume down */
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+            >;
+        };
+        
+    };
+};

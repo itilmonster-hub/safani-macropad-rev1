@@ -1,0 +1,6 @@
+if SHIELD_SAFANI9
+
+config ZMK_KEYBOARD_NAME
+    default "SAFANI"
+
+endif
