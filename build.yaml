@@ -1,3 +1,6 @@
 include:
   - board: nice_nano//zmk
     shield: safani9
+
+  - board: nice_nano//zmk
+    shield: settings_reset
