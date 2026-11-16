@@ -16,7 +16,7 @@
             display-name = "SAFANI";
 
             bindings = <
-                &none                &kp UP_ARROW       &none
+                &kp ESC              &kp UP_ARROW       &none
                 &kp LEFT_ARROW       &kp C_PLAY_PAUSE   &kp RIGHT_ARROW
                 &none                &kp DOWN_ARROW     &none
                 &to LWR     /* Tekan encoder -> pindah ke Layer 1 */
@@ -32,9 +32,9 @@
             display-name = "MEDIA";
 
             bindings = <
-                &kp 0           &kp C_VOL_UP      &kp 2
+                &kp N0           &kp C_VOL_UP      &kp N2
                 &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT
-                &kp 5           &kp C_VOL_DN      &kp 8
+                &kp N5           &kp C_VOL_DN      &kp N8
                 &to RSE     /* Tekan encoder -> pindah ke Layer 2 */
             >;
 
@@ -48,9 +48,9 @@
             display-name = "NUM";
 
             bindings = <
-                &kp 1    &kp 2      &kp 3
-                &kp 4    &kp 5      &kp 6
-                &kp 7    &kp 8      &kp 9
+                &kp N1    &kp N2      &kp N3
+                &kp N4    &kp N5      &kp N6
+                &kp N7    &kp N8      &kp N9
                 &to ADJ     /* Tekan encoder -> pindah ke Layer 3 */
             >;
 
@@ -64,9 +64,9 @@
             display-name = "WINDOWS";
 
             bindings = <
-                &none       &kp K_POWER       &sys_reset
-                &none       &kp C_POWER       &none
-                &none       &none       &none
+                &kp LC(C)       &kp LC(X)       &kp LC(V)
+                &kp LCTRL       &kp RET       &kp LC(LA(DEL))
+                &kp RALT       &kp TAB       &kp LA(TAB)
                 &to DEF     /* Tekan encoder -> kembali ke Layer 0 (SAFANI) */
             >;
 
