@@ -77,7 +77,7 @@
         };
 
         /* ================= LAYER 4 (BLUETOOTH) ================= */
-        adjust_layer {
+        bluetooth_layer {
             display-name = "BLUETOOTH";
 
             bindings = <
