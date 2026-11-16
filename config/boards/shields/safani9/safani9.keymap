@@ -6,6 +6,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define BLT 4
 
 / {
     keymap {
@@ -67,6 +68,23 @@
                 &kp LC(C)       &kp LC(X)       &kp LC(V)
                 &kp LCTRL       &kp RET       &kp LC(LA(DEL))
                 &kp RALT       &kp TAB       &kp LA(TAB)
+                &to BLT     /* Tekan encoder -> pindah ke Layer 4 */
+            >;
+
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+            >;
+        };
+        };
+
+        /* ================= LAYER 4 (BLUETOOTH) ================= */
+        adjust_layer {
+            display-name = "BLUETOOTH";
+
+            bindings = <
+                &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2
+                &bt BT_SEL 3       &bt BT_SEL 4       &bt BT_SEL 5
+                &none       &none       &none
                 &to DEF     /* Tekan encoder -> kembali ke Layer 0 (SAFANI) */
             >;
 
