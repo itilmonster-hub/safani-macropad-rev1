@@ -75,7 +75,6 @@
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
-        };
 
         /* ================= LAYER 4 (BLUETOOTH) ================= */
         adjust_layer {
